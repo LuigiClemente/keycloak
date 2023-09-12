@@ -1,4 +1,4 @@
-> Grafana does not start on `Windows Subsystem for Linux` because the host networking driver only works on Linux hosts, and is not supported on Docker Desktop for Mac, Docker Desktop for Windows, or Docker EE for Windows Server
+### [Keycloak](https://github.com/keycloak/keycloak) with [PostgreSQL](https://www.postgresql.org), which includes Keycloak's monitoring using [Prometheus](https://github.com/prometheus/prometheus) and [Grafana](https://github.com/grafana/grafana)
 
 1. Requires [docker](https://docs.docker.com/get-docker/) and [compose](https://docs.docker.com/compose/install/)
 2. Parameterized using variables in the [`.env`](.env) file
@@ -13,7 +13,7 @@ docker compose up -d
 | Prometheus | 9090 | |
 | Grafana | 3000 | `admin` | `grafana`
 
-| Useful commands | Discription
+| Useful commands | Description
 |-|-
 | `docker stats` | Containers resource usage (`--no-stream` only pull the first result)
 | `docker compose logs` | Shows logs of containers (`-f` to follow logs)
